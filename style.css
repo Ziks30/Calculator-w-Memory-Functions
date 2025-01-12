@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+.calculator {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 30px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: black;
+}
+.display {
+  width: 200px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.buttons {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  height: 25px;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.row-1 button {
+    height: auto;
+    padding: 0;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.row-rest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.setting button{
+    background-color: #505050;
+    color: #D4D4D2;
+}
+
+.number button{
+    background-color: #1C1C1C;
+    color: #D4D4D2;
+}
+
+.row-rest .operator {
+    background-color: #FF9500;
+    color: #D4D4D2;
+}
